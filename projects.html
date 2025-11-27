@@ -216,7 +216,7 @@ footer {
   </div>
 
   <!-- Education Accordion -->
-  <button class="collapsible"><i class="fas fa-graduation-cap"></i> Education</button>
+  <button class="collapsible active-collapsible"><i class="fas fa-graduation-cap"></i> Education</button>
   <div class="content">
     <p style="font-size:16px; color:#003366; margin-top:10px;">
       <strong>📘 Matric:</strong> Science<br>
@@ -294,9 +294,15 @@ footer {
   // Collapsible functionality
   const coll = document.querySelectorAll(".collapsible");
   coll.forEach(button => {
+    const content = button.nextElementSibling;
+
+    // Show content if button has class active-collapsible
+    if(button.classList.contains("active-collapsible")) {
+      content.style.display = "block";
+    }
+
     button.addEventListener("click", function() {
       this.classList.toggle("active-collapsible");
-      const content = this.nextElementSibling;
       if (content.style.display === "block") {
         content.style.display = "none";
       } else {
