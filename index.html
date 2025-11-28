@@ -20,15 +20,17 @@ body{
   padding:40px 0;
 }
 
+/* --- Center Layout --- */
 .intro{
   background:#0E1A34;
   border:3px solid #00A651;
   padding:40px;
   border-radius:18px;
   display:flex;
-  gap:40px;
   align-items:center;
-  flex-wrap:wrap;
+  justify-content:center;
+  flex-direction:column;
+  gap:25px;
   box-shadow:0 6px 16px rgba(0,0,0,0.25);
   transition:0.3s ease-in-out;
 }
@@ -61,16 +63,20 @@ h1{
   margin:0 0 10px 0;
   font-size:36px;
   color:#FFFFFF;
+  text-align:center;
 }
 p{
   margin:0;
   font-size:17px;
   line-height:1.6;
   color:#CFE1FF;
+  text-align:center;
 }
 
+/* Tabs */
 .tabs{
   margin:15px 0;
+  text-align:center;
 }
 .tabs a{
   text-decoration:none;
@@ -101,18 +107,22 @@ p{
 
 <div class="container">
   <div class="intro">
+
     <img src="myphoto.png.png" alt="Hafiza Umama" />
-    <div>
-      <h1>Hafiza Umama</h1>
 
-      <div class="tabs">
-        <a href="index.html" class="active">About Us</a>
-        <a href="projects.html">Projects</a>
-        <a href="contact.html">Contact Us</a>
-      </div>
+    <h1>Hafiza Umama</h1>
 
-      <p>Hello! I'm Hafiza Umama, a student enrolled in Kinnaird College for Women University at the Department of Computer Science. I have a strong passion for helping others. I love learning new things and showing my creativity in my projects. Currently, I am learning HTML and CSS. My learning journey represents my creativity, designing capability, and growing skills in building clean and stylish websites.</p>
+    <div class="tabs">
+      <a href="index.html" class="active">About Us</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact Us</a>
     </div>
+
+    <p>I’m Hafiza Umama, a Computer Science student at Kinnaird College for Women University. 
+       I focus on creating clean, modern designs and developing strong web-development skills. 
+       I am currently learning HTML and CSS to build creative and user-friendly projects.
+    </p>
+
   </div>
 </div>
 
